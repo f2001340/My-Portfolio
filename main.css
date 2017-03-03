@@ -1,0 +1,21 @@
+body {
+    background-color: azure;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.myNavBarTop {
+    background-color: black;
+}
+
+.contactLinks {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.contactLink {
+    
+}
