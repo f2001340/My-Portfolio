@@ -12,8 +12,9 @@ body {
 
 .contactLinks {
     position: fixed;
-    bottom: 0;
+    bottom: 40%;
     left: 0;
+    z-index: 999999;
 }
 
 .contactLink {
