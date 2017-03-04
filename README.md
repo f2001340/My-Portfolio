@@ -1,5 +1,2 @@
-# Musings
-My Musings...
-
-# My Profile
-Portfolio page under construction using just HTML, CSS and Bootstrap.
+# My Portfolio
+Portfolio page built using just HTML, CSS and Bootstrap.
