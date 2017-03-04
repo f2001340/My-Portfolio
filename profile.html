@@ -5,10 +5,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     
-    <nav class="navbar navbar-default navbar-fixed-top myNavBarTop">
+    <nav class="navbar navbar-inverse navbar-fixed-top myNavBarTop">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -22,51 +26,32 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#about">About Me</a></li>
+            <li><a href="#about">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#interests">Interests</a></li>
-            
           </ul>
-        </div><!-- /.navbar-collapse -->
-          
+            
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-github-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-codepen"></i></a></li>        
+            </ul>
+        </div><!-- /.navbar-collapse -->          
       </div><!-- /.container -->
-    </nav>
+    </nav> <!--End Navigation Links-->
     
-    <div class="container contactLinks">
-        <div class="row"> 
-            <div class="col-xs-1 contactLink">
-                <a href="https://www.linkedin.com/in/adityamajety" target="_blank" class="btn btn-lg btn-info btn-block"><i class="fa fa-linkedin"></i></a>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-xs-1 contactLink">
-                <a href="https://www.facebook.com/adithyamajety" target="_blank" class="btn btn-lg btn-success btn-block"><i class="fa fa-facebook-official"></i></a>
-            </div>
-        </div>
-            
-        <div class="row">
-            <div class="col-xs-1 contactLink">
-                <a href="https://github.com/f2001340" target="_blank" class="btn btn-lg btn-info btn-block"><i class="fa fa-github"></i></a>
-            </div>
-        </div>
-            
-        <div class="row">
-            <div class="col-xs-1 contactLink">
-                <a href="https://codepen.io/f2001340/" target="_blank" class="btn btn-lg btn-success btn-block"><i class="fa fa-codepen"></i></a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="container">
-        <div class="jumbotron">
+    <!--Start the Main Content-->
+    <div id="about" class="container mainContent">
+        <h1 class="text-center"><span class="fa fa-bullhorn"></span> About Me</h1>
+        <div class="jumbotron myJumbotron">
             <div class="row">
                 <div class="col-sm-8">
-                    <p>Full Stack Java Developer with experience in developing Distributed, Complex, Modular and Scalable Enterprise Web Applications</p>
-                    <p>Recent experience in Web Development and on the way to become Full Stack Web Developer</p>
-                    <p>PowerBuilder Developer with extensive Client-Server Development experience</p>
-                    <p>Telco, Finance, Banking and Energy industry experience.</p>
-                    <p>Agile, TDD, Continuous Delivery and extensive Client Interaction.</p>
+                    <p><span style="color:deeppink" class="glyphicon glyphicon-pushpin"></span> Full Stack Java Developer with experience in developing Distributed, Complex, Modular and Scalable Enterprise Web Applications</p>
+                    <p><span style="color:deeppink" class="glyphicon glyphicon-pushpin"></span> Recent experience in Web Development and on the way to become Full Stack Web Developer</p>
+                    <p><span style="color:deeppink" class="glyphicon glyphicon-pushpin"></span> PowerBuilder Developer with extensive Client-Server Development experience</p>
+                    <p><span style="color:deeppink" class="glyphicon glyphicon-pushpin"></span> Telco, Finance, Banking and Energy industry experience.</p>
+                    <p><span style="color:deeppink" class="glyphicon glyphicon-pushpin"></span> Agile, TDD, Continuous Delivery and extensive Client Interaction.</p>
                 </div>
                 <div class="col-sm-4">
                     <img class="thumbnail" src="adi.jpg">
@@ -75,44 +60,55 @@
         </div>
     </div>
     
-    <div class="container">
+    <div id="projects" class="container projects">
+        <h1 class="text-center"><span class="fa fa-road"></span> My Projects</h1>
         <div class="row">
             <div class="col-xs-4 col-xs-offset-2">
-                <div class="thumbnail">
+                <div class="thumbnail myProjects">
                   <img src="mil.jpg" alt="Mil Systems" class="img-rounded">
                   <div class="caption">
-                    <h3 class="text-center">Web Developer</h3>
-                    <p>
-                        <a href="#" class="btn btn-primary" role="button">AngularJS</a>
-                        <a href="#" class="btn btn-primary" role="button">jQuery</a>
-                        <a href="#" class="btn btn-primary" role="button">NodeJS</a>
-                    </p>
-                    <p>
-                        <a href="#" class="btn btn-primary" role="button">ExpressJS</a>
-                        <a href="#" class="btn btn-primary" role="button">Bower</a>
-                        <a href="#" class="btn btn-primary" role="button">Grunt</a>
-                        <a href="#" class="btn btn-primary" role="button">Agile</a>
-                    </p>
+                    <h3 class="text-center"><span class="label label-default">Web Developer</span></h3>
+                    <div class="row">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            AngularJS
+                        </div>
+                        <div class="col-sm-4">
+                            jQuery
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            NodeJS
+                        </div>
+                        <div class="col-sm-4 col-xs-10">
+                            Grunt
+                        </div>
+                    </div>                    
                   </div>
                 </div>
             </div>
 
             <div class="col-xs-4">
-                <div class="thumbnail">
+                <div class="thumbnail myProjects">
                   <img src="boa.jpg" alt="Bank of America" class="img-rounded">
                   <div class="caption">
-                    <h3 class="text-center">Senior Analyst</h3>
-                    <p>
-                        <a href="#" class="btn btn-primary" role="button">AngularJS</a>
-                        <a href="#" class="btn btn-primary" role="button">jQuery</a>
-                        <a href="#" class="btn btn-primary" role="button">REST</a>
-                    </p>
-                    <p>
-                        <a href="#" class="btn btn-primary" role="button">Java/J2EE</a>
-                        <a href="#" class="btn btn-primary" role="button">SOAP</a>
-                        <a href="#" class="btn btn-primary" role="button">TDD</a>
-                        <a href="#" class="btn btn-primary" role="button">Agile</a>
-                    </p>
+                      <h3 class="text-center"><span class="label label-default">Senior Analyst</span></h3>
+                      <div class="row">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            AngularJS
+                        </div>
+                        <div class="col-sm-4">
+                            Java/J2EE
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            SOAP
+                        </div>
+                        <div class="col-sm-4">
+                            REST
+                        </div>
+                      </div>
                   </div> <!--end caption-->
                 </div> <!--end thumbnail-->
             </div> <!--end col-->
@@ -120,29 +116,51 @@
 
         <div class="row">
             <div class="col-xs-4 col-xs-offset-2">
-                <div class="thumbnail">
+                <div class="thumbnail myProjects">
                   <img src="db.jpg" alt="Mil Systems" class="img-rounded">
                   <div class="caption">
-                    <h3 class="text-center">Software Engineer</h3>
-                    <p>
-                        <a href="#" class="btn btn-primary" role="button">PowerBuilder</a>
-                        <a href="#" class="btn btn-primary" role="button">SQL</a>
-                        <a href="#" class="btn btn-primary" role="button">PLSQL</a>
-                    </p>
+                      <h3 class="text-center"><span class="label label-default">Software Engineer</span></h3>
+                      <div class="row">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            PowerBuilder
+                        </div>
+                        <div class="col-sm-4">
+                            PLSQL
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            SQL
+                        </div>
+                        <div class="col-sm-4">
+                            Toad
+                        </div>
+                      </div>
                   </div>
                 </div>
             </div>
 
             <div class="col-xs-4">
-                <div class="thumbnail">
+                <div class="thumbnail myProjects">
                   <img src="amdocs.jpg" alt="Bank of America" class="img-rounded">
                   <div class="caption">
-                    <h3 class="text-center">Senior Subject Matter Expert</h3>
-                    <p>
-                        <a href="#" class="btn btn-primary" role="button">PowerBuilder</a>
-                        <a href="#" class="btn btn-primary" role="button">C</a>
-                        <a href="#" class="btn btn-primary" role="button">Tuxedo</a>
-                    </p>
+                      <h3 class="text-center"><span class="label label-default">Senior Subject Matter Expert</span></h3>
+                      <div class="row">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            PowerBuilder
+                        </div>
+                        <div class="col-sm-4">
+                            C/C++
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            Tuxedo
+                        </div>
+                        <div class="col-sm-4">
+                            Unix
+                        </div>
+                      </div>
                   </div>
                 </div>
             </div>
@@ -150,37 +168,54 @@
         </div> <!--end row-->
     </div> <!--End of Container -->
     
-    <div class="container">
+    <div id="interests" class="container interestsClass">
+        <h1 class="text-center"><span class="fa fa-bell-o"></span> My Interests</h1>
         <div class="row">
             <div class="col-xs-4">
-                <div class="thumbnail">
+                <div class="thumbnail myInterests">
                   <img src="running.jpg" alt="Bank of America" class="img-rounded">
                   <div class="caption">
                     <h3 class="text-center">Running</h3>
+                      <p>5 Full Marathons</p>
+                      <p>10 Half Marathons</p>
+                      <p>2 Power Duathlons</p>
+                      <p>World's Hightest Marathon</p>
+                      <p>Trained 100 people for 10km</p>
                   </div>
                 </div>
             </div>
             
             <div class="col-xs-4">
-                <div class="thumbnail">
+                <div class="thumbnail myInterests">
                   <img src="cycling.jpg" alt="Bank of America" class="img-rounded">
                   <div class="caption">
                     <h3 class="text-center">Cycling</h3>
+                      <p>200km Midnight Brevet</p>
+                      <p>200km Full Day Brevet</p>
                   </div>
                 </div>
             </div>
             
             <div class="col-xs-4">
-                <div class="thumbnail">
+                <div class="thumbnail myInterests">
                   <img src="dance.jpg" alt="Bank of America" class="img-rounded">
                   <div class="caption">
                     <h3 class="text-center">Dancing</h3>
+                      <p>Shiamak Dawar Special Potential Batch</p>
+                      <p>Annual Events at Work</p>
                   </div>
                 </div>
             </div>
         </div>
     
     </div> <!--End of Photos Container -->
+    
+    <div class="container">
+        <div class="footer text-center footerText">
+            <p><span class="fa fa-copyright"></span> 2017 All Rights Reserved</p>
+            <a href="#" class="text-center">Back to Top</a>
+        </div>
+    </div> <!--end of container-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
